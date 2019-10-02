@@ -1,0 +1,8 @@
+﻿@inherits ViewPage
+
+<a href="/entry">Add Entry</a>
+<form name="status" action="/status" method="post" style="display: inline-block; margin-left: 5px">
+	<!--@Html.Hidden("date", DateTime.Now)-->
+	<input type="hidden" name="date" value="@DateTime.Now"/>
+	<a href="#" onclick="document.status.submit()">Status</a>
+</form>
